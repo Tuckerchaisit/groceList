@@ -54,7 +54,7 @@ def update(grocery_id):
 def delete_list(grocery_id):
 
   grocery = Grocery.query.get_or_404(grocery_id)
-  if grocery.autho != current_user:
+  if grocery.author != current_user:
     abort(403)
 
   db.session.delete(grocery)

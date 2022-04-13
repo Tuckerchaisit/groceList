@@ -3,13 +3,15 @@
     <div class="jumbotron">
         <h1>Grocery Lists</h1>
     </div>
-
     {% for list in grocery_lists.items %}
+    {% if list.author == current_user %}
     <h2>
-        <a class="card-title" href="{{url_for('grocery_lists.grocery', grocery_id=list.id)}}">{{list.name}}</a>
+        <a class="card-title" href="{{url_for('grocery_lists.grocery', grocery_id=list.id, grocery_lists=grocery_lists)}}">{{list.name}}</a>
+        <br>
         {{list.quantity}}
         {{list.unit}}
     </h2>
+    {% endif %}
     {% endfor %}
 
     <nav aria-label="Page Navigation example">
