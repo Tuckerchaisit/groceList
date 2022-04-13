@@ -1,7 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="jumbotron">
-        <h1>Party!</h1>
+        <h1>Grocery Lists</h1>
     </div>
-   
+
+    {% for list in grocery_lists.items %}
+    <h2>
+        <a class="card-title" href="{{url_for('grocery_lists.grocery', grocery_id=list.id)}}">{{list.name}}</a>
+        {{list.quantity}}
+        {{list.unit}}
+    </h2>
+    {% endfor %}
+
+    <nav aria-label="Page Navigation example">
+        <ul class="pagination justify-content-center">
+            {% for page_num in grocery_lists.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+                {% if grocery_lists.page == page_num %}
+                <li class="page-item disabled">
+                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
+                </li>
+                {% else %}
+                <li class="page-item">
+                    <a class="page-link" href="{{url_for('core.index', page=page_num)}}">{{ page_num }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
 {% endblock %}

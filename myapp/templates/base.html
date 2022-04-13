@@ -19,6 +19,9 @@
 
         {% if current_user.is_authenticated %}
         <li class="nav-link">
+            <a href="{{url_for('grocery_lists.create_list')}}">Create Grocery List</a> 
+        </li>
+        <li class="nav-link">
             <a href="{{url_for('users.logout')}}">Log Out</a>
         </li>
         <li class="nav-link">

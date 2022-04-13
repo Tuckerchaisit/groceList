@@ -37,8 +37,9 @@ class User(db.Model, UserMixin):
 class Grocery(db.Model):
     __tablename__ = 'grocerys'
     id = db.Column(db.Integer, primary_key=True)
+    date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     name = db.Column(db.String(140), nullable=False)
-    quantity = db.Column(db.Integer, nullable=False)
+    quantity = db.Column(db.String(140), nullable=False)
     unit = db.Column(db.String(140), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
@@ -49,4 +50,4 @@ class Grocery(db.Model):
         self.user_id = user_id
 
     def __repr__(self):
-        return f"Post ID: {self.id} -- Name: {self.name} --- Quantity: {self.quantity}"
+        return f"Post ID: {self.id} -- Date: {self.date} --- Name: {self.Name}"

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>{{list.name}}</h1>
+  <h2>Quantity: {{list.quantity}} {{list.unit}}</h2>
+  {% if list.author == current_user %}
+  <div>
+    <a class="btn btn-secondary" href="{{ url_for('grocery_lists.update', grocery_id=list.id) }}">Update</a>
+    <br>
+    <form action="{{ url_for('grocery_lists.delete_list', grocery_id=list.id) }}" method="POST">
+     <input class="btn btn-danger" type="submit" value="Delete">
+   </form>
+  </div>
+{% endif %}
+
+{% endblock content %}
