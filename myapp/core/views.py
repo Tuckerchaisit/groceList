@@ -11,6 +11,3 @@ def index():
     grocery_lists = Grocery.query.order_by(Grocery.date.desc()).paginate(page=page, per_page=5)
     return render_template('index.html', grocery_lists=grocery_lists)
 
-@core.route('/info')
-def info():
-    return render_template('info.html')
