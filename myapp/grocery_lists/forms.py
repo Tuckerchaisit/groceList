@@ -6,4 +6,4 @@ class GroceryForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
     quantity = StringField('Quantity', validators=[DataRequired()])
     unit = StringField('Unit', validators=[DataRequired()])
-    submit = SubmitField('Post')
+    submit = SubmitField('Add/Update Item')

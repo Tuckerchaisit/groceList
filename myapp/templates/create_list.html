@@ -3,9 +3,9 @@
   <form class="form-group" method="POST" id="signup-form-container">
     {{form.hidden_tag()}}
     <div id="add-header-container">
-      <h1 id="add-header">Add Item</h1>
+      <h1 id="add-header">Item</h1>
     </div>
-    <div class="form-group">
+    <div class="form-group" id="name-container">
       {{form.name.label}}: 
       {{form.name}}
     </div>
@@ -18,7 +18,7 @@
       {{form.unit}}
     </div>
     <div class="form-group">
-      {{form.submit(class="btn btn-outline-info")}}
+      {{form.submit(id="add-button")}}
     </div>
   </form>
 

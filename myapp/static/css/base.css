@@ -136,3 +136,28 @@ input#sign-in-button:hover{
   text-align: center;
   border-radius: 6px;
 }
+
+#add-button{
+  margin-top: 10px;
+  border: #494949 solid 2px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input#add-button:hover{
+  background-color: #EE6055;
+  color:white;
+}
+
+#name-container{
+  margin-top: 15px;
+}
+
+input#quantity{
+  width: 122px;
+}
+
+input#name{
+  width: 140px;
+}
