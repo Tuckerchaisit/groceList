@@ -1,21 +1,22 @@
 {% extends "base.html" %}
+
+
 {% block content %}
     <div class="">
-        <h1>Grocery Lists</h1>
-        {% if current_user.is_authenticated %}
-        <a href="{{url_for('grocery_lists.create_list')}}">Add New Item</a>
-        {% endif %}
+        <h1 class="top-logo">groceList</h1>
+        
     </div>
     {% for list in grocery_lists.items %}
     {% if list.author == current_user %}
     <h2>
-        <a class="" href="{{url_for('grocery_lists.grocery', grocery_id=list.id, grocery_lists=grocery_lists)}}">{{list.name}}</a>
+        <a class="" href="{{url_for('grocery_lists.grocery', grocery_id=list.id, grocery_lists=grocery_lists)}}">{{list.name}}
         <br>
         {{list.quantity}}
         {{list.unit}}
         <form action="{{ url_for('grocery_lists.delete_list', grocery_id=list.id) }}" method="POST">
             <input class="" type="submit" value="Delete">
         </form>
+        </a>
     </h2>
     {% endif %}
     {% endfor %}

@@ -6,32 +6,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/static/css/base.css">
     <title>groceList!</title>
 </head>
 <body>
-    <ul class="nav">
+    <ul class="navbar">
         <li class="nav-link">
-            <a href="{{url_for('core.index')}}">Home</a>
+            <a href="{{url_for('core.index')}}"><img src="../static/images/house.png" alt="" class="icon"></a>
         </li>
         
 
         {% if current_user.is_authenticated %}
-        <!-- <li class="nav-link">
-            <a href="{{url_for('grocery_lists.create_list')}}">Create Grocery List</a> 
-        </li> -->
+
+        <a href="{{url_for('grocery_lists.create_list')}}"><img src="../static/images/add-cart.png" alt="" class="icon"></a>
+        
         <li class="nav-link">
-            <a href="{{url_for('users.logout')}}">Log Out</a>
+            <a href="{{url_for('users.logout')}}"><img src="../static/images/sign-out.png" alt="" class="icon"></a>
         </li>
-        <!-- <li class="nav-link">
-            <a href="{{url_for('users.account')}}">Account</a>
-        </li> -->
+        
         {% else %}
         <li class="nav-link">
-            <a href="{{url_for('users.login')}}">Log In</a>
+            <a href="{{url_for('users.login')}}"><img src="../static/images/sign-in.png" alt="" class="icon"></a>
         </li>
         <li class="nav-link">
-            <a href="{{url_for('users.register')}}">Register</a>
+            <a href="{{url_for('users.register')}}"><img src="../static/images/signup.png" alt="" class="icon"></a>
         </li>
         {% endif %}
     </ul>

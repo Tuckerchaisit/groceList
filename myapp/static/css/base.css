@@ -1,3 +1,62 @@
+html {
+  box-sizing: border-box
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
 body{
-  background-color: blue;
+  background-color: #fefee3;
+  margin:0;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  background-color: #4c956c;
+  width: 100%;
+  height:50px;
+  top:0;
+  left:0;
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.icon{
+  height:45px;
+  width: 45px;
+  margin-top: 2.5px;
+}
+.icon:hover{
+  height: 50px;
+  width: 50px;
+  margin:0;
+
+}
+
+.nav-link{
+  width: 50px;
+}
+
+.top-logo{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color:white;
+  letter-spacing: 4px;
+  
+text-shadow: 4px 4px 0 #494949, 4px -4px 0 #494949, -4px 4px 0 #494949, -4px -4px 0 #494949, 4px 0px 0 #494949, 0px 4px 0 #494949, -4px 0px 0 #494949, 0px -4px 0 #494949;
 }
