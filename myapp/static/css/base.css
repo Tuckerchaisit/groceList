@@ -101,7 +101,17 @@ input#submit{
   border-radius: 6px;
   cursor: pointer;
 }
+#submit-update{
+  margin-top: 10px;
+  border: #494949 solid 2px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 input#submit:hover{
+  background-color: #c8ecb6;
+}
+#submit-update:hover{
   background-color: #c8ecb6;
 }
 
@@ -160,4 +170,44 @@ input#quantity{
 
 input#name{
   width: 140px;
+}
+
+#grocery-btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top:10px
+}
+
+.item-detail-ctn{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Titillium Web', sans-serif;
+  /* align-items: center; */
+  border:#494949 solid 4px;
+  padding: 0 0 10px 0;
+  border-radius: 12px;
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+
+#item-detail-header{
+  background-color: #eba146;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  margin:0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color:white;
+}
+#item-name{
+  margin: 0;
+  margin-left: 20px;
+  font-size: 2.2rem;
+}
+#item-qty{
+  margin:0;
+  margin-left: 20px;
+  font-size: 1.3rem;
 }
