@@ -60,3 +60,46 @@ a{
   
 text-shadow: 4px 4px 0 #494949, 4px -4px 0 #494949, -4px 4px 0 #494949, -4px -4px 0 #494949, 4px 0px 0 #494949, 0px 4px 0 #494949, -4px 0px 0 #494949, 0px -4px 0 #494949;
 }
+
+#signup-form-container{
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:#494949 solid 5px;
+  padding: 0 0 10px 0;
+  border-radius: 12px;
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+
+#signup-header{
+  margin:0;
+  margin-bottom: 5px;
+  color: #fefee3;
+}
+
+#signup-header-container{
+  background-color: #4c956c;
+  width: 100%;
+  text-align: center;
+}
+
+#email-div{
+  margin-top: 10px;
+}
+
+input#pass_confirm{
+  width:100px;
+}
+
+input#submit{
+  margin-top: 10px;
+  border: #494949 solid 2px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+input#submit:hover{
+  background-color: #c8ecb6;
+}

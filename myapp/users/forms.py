@@ -24,7 +24,7 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired(), EqualTo('pass_confirm', message='Passwords must match!')])
     # we make sure password is equal to pass confirm - so 
     pass_confirm = PasswordField('Confirm Password', validators=[DataRequired()])
-    submit = SubmitField('Register')
+    submit = SubmitField('SIGNUP')
     
     #when someone is registering - if the email exists then we want to raise a validation error
     def check_email(self, field):

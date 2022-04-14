@@ -1,12 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
    
-<form method="POST">
+<form method="POST" id="signup-form-container">
     {{form.hidden_tag()}}
-    {{form.email.label}}{{form.email}}<br>
-    {{form.username.label}}{{form.username}}<br>
-    {{form.password.label}}{{form.password}}<br>
-    {{form.pass_confirm.label}}{{form.pass_confirm}}<br>
-    {{form.submit()}}
+    <div id="signup-header-container"><h1 id="signup-header">Sign Up</h1></div>
+    <div id="email-div">
+        {{form.email.label}}: {{form.email}}<br>
+    </div>
+    <div>
+        {{form.username.label}}: {{form.username}}<br>
+    </div>
+    <div>
+        {{form.password.label}}: {{form.password}}<br>
+    </div>
+    <div>
+        {{form.pass_confirm.label}}: {{form.pass_confirm}}<br>
+    </div>
+    <div >
+        {{form.submit()}}
+    </div>
 </form>
 {% endblock %}
