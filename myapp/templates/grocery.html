@@ -5,10 +5,9 @@
   <h2>Quantity: {{grocery.quantity}} {{grocery.unit}}</h2>
   {% if grocery.author == current_user %}
   <div>
-    <a class="btn btn-secondary" href="{{ url_for('grocery_lists.update', grocery_id=grocery.id) }}">Update</a>
-    <br>
+    <a class="y" href="{{ url_for('grocery_lists.update', grocery_id=grocery.id) }}"><button>Update</button></a>
     <form action="{{ url_for('grocery_lists.delete_list', grocery_id=grocery.id) }}" method="POST">
-     <input class="btn btn-danger" type="submit" value="Delete">
+     <input class="" type="submit" value="Delete">
    </form>
   </div>
 {% endif %}
