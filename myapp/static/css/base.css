@@ -90,7 +90,7 @@ text-shadow: 4px 4px 0 #494949, 4px -4px 0 #494949, -4px 4px 0 #494949, -4px -4p
 }
 
 input#pass_confirm{
-  width:100px;
+  width:70px;
 }
 
 input#submit{
@@ -102,4 +102,11 @@ input#submit{
 }
 input#submit:hover{
   background-color: #c8ecb6;
+}
+
+input#username{
+  width:115px;
+}
+input#password{
+  width:120px;
 }
