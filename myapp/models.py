@@ -1,6 +1,6 @@
 #models 
 from cgitb import text
-from turtle import title
+# from turtle import title
 from myapp import db, login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
 #allows to set up isAuthenticate etc 
