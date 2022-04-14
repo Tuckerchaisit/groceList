@@ -110,3 +110,15 @@ input#username{
 input#password{
   width:120px;
 }
+
+#sign-in-button{
+  margin-top: 10px;
+  border: #494949 solid 2px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input#sign-in-button:hover{
+  background-color: #edcbdf;
+}
