@@ -1,7 +1,7 @@
 # groceList 
 
-groceList is an app to help user plan and list the item that they need to purchase during their visit to the grocery store. groceList make every visit to the grocery store faster and more efficient 
-![groceList-logo width=40px](/myapp/static/images/add-cart.png)
+![groceList-logo ](/myapp/static/images/logo.png)<br>
+  groceList is an app to help user plan and list the item that they need to purchase during their visit to the grocery store. groceList make every visit to the grocery store faster and more efficient 
 
 ### Click [Here](https://grocelist-tc.herokuapp.com/) to try out groceList.
 
@@ -11,7 +11,7 @@ groceList is an app to help user plan and list the item that they need to purcha
 ---
 
 ## Phtos of the App  📸
-
+![inapp-photo ](/myapp/static/images/index-pg.png)
 ---
 
 ## Technologies Used 💾
