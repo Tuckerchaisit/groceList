@@ -225,7 +225,9 @@ input#name{
   margin: 20px auto;
   border:#494949 3px solid;
   border-radius: 10px;
-  
+}
+.grocery-ctn:hover{
+  background-color: rgb(254, 200, 82);
 }
 
 .card-info{
