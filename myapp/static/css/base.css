@@ -58,7 +58,8 @@ a{
   color: #d5fc88;
   letter-spacing: 4px;
   text-align: center;
-  text-shadow: 4px 4px 0 #494949, 4px -4px 0 #494949, -4px 4px 0 #494949, -4px -4px 0 #494949, 4px 0px 0 #494949, 0px 4px 0 #494949, -4px 0px 0 #494949, 0px -4px 0 #494949;
+  /* text-shadow: 4px 4px 0 #494949, 4px -4px 0 #494949, -4px 4px 0 #494949, -4px -4px 0 #494949, 4px 0px 0 #494949, 0px 4px 0 #494949, -4px 0px 0 #494949, 0px -4px 0 #494949; */
+  text-shadow: 4px 4px 0 rgb(37, 37, 37), 4px -4px 0 rgb(37, 37, 37), -4px 4px 0 rgb(37, 37, 37), -4px -4px 0 rgb(37, 37, 37), 4px 0px 0 rgb(37, 37, 37), 0px 4px 0 rgb(37, 37, 37), -4px 0px 0 rgb(37, 37, 37), 0px -4px 0 rgb(37, 37, 37);
   margin: 0;
 }
 span{
