@@ -221,11 +221,11 @@ input#name{
   display: flex;
   flex-direction: row;
   width:80%;
-  background-color: whitesmoke;
+  background-color: rgb(252, 226, 169);
   margin: 20px auto;
   border:#494949 3px solid;
   border-radius: 10px;
-  /* align-items: center; */
+  
 }
 
 .card-info{
