@@ -188,7 +188,6 @@ input#name{
   display: flex;
   flex-direction: column;
   font-family: 'Titillium Web', sans-serif;
-  /* align-items: center; */
   border:#494949 solid 4px;
   padding: 0 0 10px 0;
   border-radius: 12px;
@@ -215,4 +214,47 @@ input#name{
   margin:0;
   margin-left: 20px;
   font-size: 1.3rem;
+}
+
+.grocery-ctn{
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  flex-direction: row;
+  width:80%;
+  background-color: whitesmoke;
+  margin: 20px auto;
+  border:#494949 3px solid;
+  border-radius: 10px;
+  /* align-items: center; */
+}
+
+.card-info{
+  margin:0;
+  margin-left: 15px;
+}
+
+.x-btn{
+  margin: 0 2px auto auto;
+}
+
+input.x-btn{
+  border-radius: 4px;
+  font-weight: 900;
+  cursor: pointer;
+}
+input.x-btn:hover{
+  color:white;
+  background-color: #EE6055;
+}
+
+.name-info{
+  margin:0;
+  padding-top: 7px;
+  font-weight: 700;
+}
+
+.qty-info{
+  margin:0;
+  padding-bottom: 8px;
+  font-weight: 600;
 }
