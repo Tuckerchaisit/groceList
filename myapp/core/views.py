@@ -8,6 +8,6 @@ core = Blueprint('core', __name__)
 @core.route('/')
 def index():
     page = request.args.get('page', 1, type=int)
-    grocery_lists = Grocery.query.order_by(Grocery.date.desc()).paginate(page=page, per_page=5)
+    grocery_lists = Grocery.query.order_by(Grocery.date.desc()).paginate(page=page, per_page=100)
     return render_template('index.html', grocery_lists=grocery_lists)
 

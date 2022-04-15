@@ -74,5 +74,5 @@ def account():
 def user_posts(username):
     page = request.args.get('page', 1, type=int)
     user = User.query.filter_by(username=username).first_or_404()
-    grocery_lists = Grocery.query.filter_by(author=user).order_by(Grocery.date.desc()).paginate(page=page, per_page=5)
+    grocery_lists = Grocery.query.filter_by(author=user).order_by(Grocery.date.desc()).paginate(page=page, per_page=100)
     return render_template('user_grocery_lists.html', grocery_lists=grocery_lists, user=user)
